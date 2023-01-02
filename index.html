@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/styles/style.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">SPLI <br> TTER</h1>
+    <div class="calculator-container">
+      <div class="left-container">
+        <div class="input-container">
+          <h4>Bill</h4>
+          <div>
+            <img srcset="/images/icon-dollar.svg" src="/images/icon-dollar.svg" alt="icon dollar">
+            <input type="number" name="value" id="value-amount" placeholder="0">
+          </div>
+        </div>
+
+        <div class="tip-container">
+          <h4>Select Tip %</h4>
+          <div class="percentage-container">
+            <button class="percentage" value="5">5%</button>
+            <button class="percentage" value="10">10%</button>
+            <button class="percentage" value="15">15%</button>
+            <button class="percentage" value="25">25%</button>
+            <button class="percentage" value="50">50%</button>
+            <input type="number" class="custom-button" id="custom" placeholder="Customer">
+          </div>
+        </div>
+        <div class="people-container">
+          <h4>Number of People</h4>
+          <div>
+            <img srcset="/images/icon-person.svg" src="/images/icon-person.svg" alt="icon person">
+            <input type="number" name="number-people" id="number-people" placeholder="1" value="1">
+          </div>
+        </div>
+
+      </div>
+      <div class="result-container">
+        <div class="info-container">
+          <p>Tip Amount <br> <span>/ person</span></p>
+          <h3 id="tip-amount-text">$ 0,00</h3>
+        </div>
+        <div class="info-container">
+          <p>Total <br> <span>/ person</span></p>
+          <h3 id="total">$ 0,00</h3>
+        </div>
+        <button id="button-reset">Reset</button>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <script src="/script/index.js" type="module"></script>
+</body>
+
+</html>
